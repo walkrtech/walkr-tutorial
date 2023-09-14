@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div style={{ backgroundColor: '#022c40', width: '100vw' }}>
-      <div className="container pt-5">
+      <div className=" pt-5">
         <Header />
         <Videos />
         <Dowload />
