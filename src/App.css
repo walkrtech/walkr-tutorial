@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,26 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* Alinha à direita */
+  height: 100vh;
+  /* Altura igual à altura da janela de visualização */
+  /* Largura da barra de progresso */
+  background-color: #29BCBA;
+  /* Cor de fundo da barra de progresso */
+  z-index: 9999;
+  /* Certifique-se de que a barra de progresso está na parte superior */
+}
+
+.scroll-progress-bar {
+  width: 100%;
+  background-color: #FFA500;
+  /* Cor da barra de progresso */
+  transition: height 0.3s;
+  /* Animação de altura da barra de progresso */
 }

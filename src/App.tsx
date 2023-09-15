@@ -4,8 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './components/Header'
 import { Videos } from './components/Videos'
-import { Dowload } from './components/Download'
+import { Download } from './components/Download'
 import { Footer } from './components/Footer'
+import ScrollProgressBar from './components/ScrollProgressBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,9 +16,10 @@ function App() {
       <div className=" pt-5">
         <Header />
         <Videos />
-        <Dowload />
+        <Download />
         <Footer />
       </div>
+      <ScrollProgressBar />
     </div>
   )
 }

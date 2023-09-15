@@ -78,14 +78,14 @@ export const Videos = () => {
         <div className="container mt-5 mb-5 d-flex flex-column justify-content-center">
             {videoData.map((video, index) => (
                 <div key={index}>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-9 mb-3">
                         <div className="title mt-5">
                             <h4 className="text-white" style={{ textAlign: 'left' }} >{video.title}</h4>
                             <h5 className="mt-3" style={{ color: "#29BCBA", fontWeight: 'bold', fontSize: 24, textAlign: 'left' }}>{video.subtitle}</h5>
                             <p className="text-white mt-3" style={{ fontSize: 14, textAlign: 'left' }}>{video.description}</p>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-9">
                         <div className="video d-flex">
                             <ReactPlayer url={video.url} controls={true} />
                         </div>
